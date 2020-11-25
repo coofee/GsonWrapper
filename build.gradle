@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'maven'
+}
+
+group 'com.coofee.wrapper'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+configurations {
+    provided {
+        dependencies.all { dep ->
+            configurations.default.exclude group: dep.group, module: dep.name
+        }
+    }
+    compile.extendsFrom provided
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'com.github.noconnor:junitperf:1.13.1'
+
+    provided 'com.google.code.gson:gson:2.7'
+}
