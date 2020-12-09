@@ -19,8 +19,21 @@
 
 # 0x01 GsonWrapper
 
-当`GsonWrapper`解析json时，其返回的对象要么是null，要么是object（且object中的字段不存在null值）。
+当`GsonWrapper`解析json时，其返回的对象要么是null，要么是object（且object中的字段不存在null值），可以使用如下方式添加依赖：
 
+```gradle
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url "https://orgcoofee.bintray.com/coofee"
+    }
+}
+
+dependencies {
+    compile 'com.coofee.wrapper:gson:<lastest-version>'
+}
+```
 
 ## 1. 基础用法
 
