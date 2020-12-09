@@ -35,6 +35,8 @@ dependencies {
 }
 ```
 
+版本：[![](https://api.bintray.com/packages/orgcoofee/coofee/gson/images/download.svg)](https://bintray.com/orgcoofee/coofee/gson/_latestVersion)
+
 ## 1. 基础用法
 
 解析/生成json与gson库的api一致，均使用`fromJson()`和`toJson()`方法。
