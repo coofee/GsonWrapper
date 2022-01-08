@@ -24,18 +24,15 @@
 ```gradle
 repositories {
     mavenCentral()
-    jcenter()
-    maven {
-        url "https://orgcoofee.bintray.com/coofee"
-    }
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-    compile 'com.coofee.wrapper:gson:<lastest-version>'
+    implementation 'com.github.coofee:GsonWrapper:<latest version>'
 }
 ```
 
-版本：[![](https://api.bintray.com/packages/orgcoofee/coofee/gson/images/download.svg)](https://bintray.com/orgcoofee/coofee/gson/_latestVersion)
+版本：[![](https://jitpack.io/v/coofee/GsonWrapper.svg)](https://jitpack.io/#coofee/GsonWrapper)
 
 ## 1. 基础用法
 
